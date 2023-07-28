@@ -17,9 +17,14 @@ let squareSize = 50
 let background_col = "#EDDFD4" // cream colour
 let circle_col = "#03A696" // teal
 let line_col = "#8C4303" //dark brown
-let square_col = "#C19A7A" // light brown
+let square_col = "#8C4303" // light brown
 
 let blue_col = "#021F59"
+
+// random colours
+colR = random(0,255);
+colG = random(0,255);
+colB = random(0,255);
 
 function setup_wallpaper(pWallpaper) {
   pWallpaper.output_mode(DEVELOP_GLYPH); //GRID_WALLPAPER
@@ -37,16 +42,15 @@ function wallpaper_background() {
 }
 
 function my_symbol() { // do not rename this function. Treat this similarly to a Draw function
-  // adjustable checkerboard
-  noStroke()
   fill(square_col)
   for (let x = 0; x <= 200; x += squareSize) {
-    for (let y = 0; y <= 200; y += squareSize) {
-      // if ((x + y) / squareSize % 2 === 0) {
-      //   fill('#fae');
-      // } else {
-      //   fill(0);
-      // }
+    for (let y = 0; y < 200; y += squareSize) {
+      if(x % random(5) == 1){
+        fill(line_col)
+      }else {
+        fill(square_col)
+      }
+      
       beginShape();
       vertex(x, y);
       vertex(x + squareSize / 2, y + squareSize/2);
@@ -60,46 +64,19 @@ function my_symbol() { // do not rename this function. Treat this similarly to a
       endShape(CLOSE);
     }
   }
-  
-  
-  
-  fill(circle_col)
-  for(let x = 0; x<=50; x++) {
-    for(let y = 0; y<=50; y++){
-      if(x % 2 == 1){
-        ellipse(25*x, 50*y, ellipse_height, ellipse_width)
-      }
-      
-    }
-  }
-  stroke(280)
+}
+
+function draw_strawberry(x, y, height, width, angle){
+  point(50,50)
+  point(60,43)
+  point(90, 43)
+  point(100,50)
+  point(75, 100)
   strokeWeight(1)
+
   noFill()
-  for(let x = 0; x<=50; x++) {
-    for(let y = 0; y<=50; y++){
-      if(x % 2 == 1){
-        ellipse(25*x, 50*y, ellipse2_height, ellipse2_width)
-      }
-      
-    }
-  }
-
-  // stroke(290)
-  // for (var x = 0; x<=200; x += 50) {
-  //   for (var y = 0; y <= 200; y += 50) {
-  //     line(x, y, x+50, y-50);
-  //     line(x, y, x-50, y-50);
-  //   }
-  // }
+  stroke("red")
+  beginShape()
   
-  // fill(blue_col)
-  // for (let x = 0; x <= 50; x++) {
-  //   for (let y = 0; y <= 50; y++) {
-  //     if (x % 2 == 1) {
-  //       ellipse(25*x, 50*y, 30, 30);
-  //     }
-  //   }
-  // }
-
-
+  endShape()
 }
