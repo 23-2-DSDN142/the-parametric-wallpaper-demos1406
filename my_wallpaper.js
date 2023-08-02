@@ -11,7 +11,7 @@ let ellipse2_height = 20
 let triangleX = 25
 let triangleY = 50
 
-let squareSize = 100
+let squareSize = 50
 
 // colours
 let background_col = "#EDDFD4" // cream colour
@@ -27,7 +27,7 @@ colG = random(0,255);
 colB = random(0,255);
 
 function setup_wallpaper(pWallpaper) {
-  pWallpaper.output_mode(GRID_WALLPAPER); //GRID_WALLPAPER or DEVELOP_GLYPH
+  pWallpaper.output_mode(DEVELOP_GLYPH); //GRID_WALLPAPER or DEVELOP_GLYPH
   pWallpaper.resolution(FIT_TO_SCREEN);
   pWallpaper.show_guide(true); //set this to false when you're ready to print
 
@@ -42,8 +42,36 @@ function wallpaper_background() {
 }
 
 function my_symbol() { // do not rename this function. Treat this similarly to a Draw function
-  drawGrid(50, square_col, 75, 0, 75)
+  // drawGrid(50, square_col, 75)
   // drawGrid(35, blue_col, 50, 7.5)
+  drawGrid2()
+  
+
+}
+
+function drawGrid2(){
+  noStroke()
+  for (let x = 0; x < 50; x++) {
+    for (let y = 0; y < 50; y++) {
+      if(x % 2 == 0){
+        
+        beginShape()
+        vertex(x*squareSize, y*squareSize)
+        vertex(x*squareSize + squareSize / 2, y*squareSize + squareSize/2)
+        vertex(x*squareSize, y*squareSize + squareSize)
+        vertex(x*squareSize - squareSize/2, y*squareSize + squareSize / 2)
+        endShape(CLOSE)
+      }
+      if(x % 2 == 1){
+        beginShape()
+        vertex(x*squareSize, y*squareSize)
+        vertex(x*squareSize + squareSize / 2, y*squareSize + squareSize/2)
+        vertex(x*squareSize, y*squareSize + squareSize)
+        vertex(x*squareSize - squareSize/2, y*squareSize + squareSize / 2)
+        endShape(CLOSE)
+      }
+    }
+  }
 }
 
 function drawGrid(size, col, distance, offset = 0, xOffset = 0){
