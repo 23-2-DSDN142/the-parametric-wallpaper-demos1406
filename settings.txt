@@ -8,46 +8,469 @@ Your final settings.txt will look something like this when you are finished:
 
 Wallpaper 1:
 
-//your parameter variables go here!
-let rect_width  = 20;
-let rect_height = 20;
-let paramter1 = 10;
-let paramter2 = true;
-let paramter3 = 50; 
-let paramter4 = 0; 
-let paramter5 = 60;
+// your parameter variables go here!
+
+// shapes
+let toggle_ellipse = false;
+let toggle_square = true;
+let toggle_shape = false;
+
+// circles
+let ellipseSize = 85; // 85
+
+// squares
+let squareSize1 = 140;
+let squareSize1_width = 140;
+let squareSize2 = squareSize1 - squareSize1 / 3;
+let squareSize3 = squareSize1 - squareSize1 / 1.5;
+
+// checkerboard
+let checkerSize = 50;
+
+// flower
+let numPetals = 9;
+let centerFlowerSize = 45;
+let toggle_flowers = false;
+let flower_col1 = "#f3e4c3";
+let flower_col2 = "#e0615f";
+
+// palette 1
+let background_col = "#f3e4c3";
+
+// ellipse colours
+let ellipse_col1 = "#9cd5d2";
+let ellipse_col2 = "#4fada8";
+
+// square colours
+let square_col1 = "#f78270";
+let square_col2 = "#e0615f";
+let square_col3 = "#52b9b1";
 
 function setup_wallpaper(pWallpaper) {
   pWallpaper.output_mode(GRID_WALLPAPER);
-  pWallpaper.resolution(NINE_LANDSCAPE);
+  pWallpaper.resolution(NINE_PORTRAIT);
   pWallpaper.show_guide(false); //set this to false when you're ready to print
 
   //Grid settings
-  pWallpaper.grid_settings.cell_width  = 100;
-  pWallpaper.grid_settings.cell_height = 100;
-  pWallpaper.grid_settings.row_offset  = 50;
+  pWallpaper.grid_settings.cell_width = 200;
+  pWallpaper.grid_settings.cell_height = 200;
+  pWallpaper.grid_settings.row_offset = 0;
 }
 
 /////////////////////////////////
 
 Wallpaper 2:
 
-//your parameter variables go here!
-let rect_width  = 10;
-let rect_height = 10;
-let paramter1 = 20;
-let paramter2 = false;
-let paramter3 = 50; 
-let paramter4 = 80; 
-let paramter5 = 30;
+// your parameter variables go here!
+
+// shapes
+let toggle_ellipse = true;
+let toggle_square = false;
+let toggle_shape = false;
+
+// circles
+let ellipseSize = 85; // 85
+
+// squares
+let squareSize1 = 140;
+let squareSize1_width = 140;
+let squareSize2 = squareSize1 - squareSize1 / 3;
+let squareSize3 = squareSize1 - squareSize1 / 1.5;
+
+// checkerboard
+let checkerSize = 50;
+
+// flower
+let numPetals = 9;
+let centerFlowerSize = 45;
+let toggle_flowers = false;
+let flower_col1 = "#f3e4c3";
+let flower_col2 = "#e0615f";
+
+// palette 1
+let background_col = "#f3e4c3";
+
+// ellipse colours
+let ellipse_col1 = "#9cd5d2";
+let ellipse_col2 = "#4fada8";
+
+// square colours
+let square_col1 = "#f78270";
+let square_col2 = "#e0615f";
+let square_col3 = "#52b9b1";
 
 function setup_wallpaper(pWallpaper) {
   pWallpaper.output_mode(GRID_WALLPAPER);
-  pWallpaper.resolution(NINE_LANDSCAPE);
+  pWallpaper.resolution(NINE_PORTRAIT);
   pWallpaper.show_guide(false); //set this to false when you're ready to print
 
   //Grid settings
-  pWallpaper.grid_settings.cell_width  = 100;
-  pWallpaper.grid_settings.cell_height = 100;
-  pWallpaper.grid_settings.row_offset  = 0;
+  pWallpaper.grid_settings.cell_width = 200;
+  pWallpaper.grid_settings.cell_height = 200;
+  pWallpaper.grid_settings.row_offset = 0;
+}
+
+
+/////////////////////////////////
+Wallpaper 3:
+
+// your parameter variables go here!
+
+// shapes
+let toggle_ellipse = false;
+let toggle_square = false;
+let toggle_shape = true;
+
+// circles
+let ellipseSize = 85; // 85
+
+// squares
+let squareSize1 = 140;
+let squareSize1_width = 140;
+let squareSize2 = squareSize1 - squareSize1 / 3;
+let squareSize3 = squareSize1 - squareSize1 / 1.5;
+
+// checkerboard
+let checkerSize = 50;
+
+// flower
+let numPetals = 9;
+let centerFlowerSize = 45;
+let toggle_flowers = false;
+let flower_col1 = "#f3e4c3";
+let flower_col2 = "#e0615f";
+
+// palette 1
+let background_col = "#f3e4c3";
+
+// ellipse colours
+let ellipse_col1 = "#9cd5d2";
+let ellipse_col2 = "#4fada8";
+
+// square colours
+let square_col1 = "#f78270";
+let square_col2 = "#e0615f";
+let square_col3 = "#52b9b1";
+
+function setup_wallpaper(pWallpaper) {
+  pWallpaper.output_mode(GRID_WALLPAPER);
+  pWallpaper.resolution(NINE_PORTRAIT);
+  pWallpaper.show_guide(false); //set this to false when you're ready to print
+
+  //Grid settings
+  pWallpaper.grid_settings.cell_width = 200;
+  pWallpaper.grid_settings.cell_height = 200;
+  pWallpaper.grid_settings.row_offset = 0;
+}
+
+
+
+/////////////////////////////////
+Wallpaper 4:
+
+// your parameter variables go here!
+
+// shapes
+let toggle_ellipse = false;
+let toggle_square = true;
+let toggle_shape = false;
+
+// circles
+let ellipseSize = 85; // 85
+
+// squares
+let squareSize1 = 140;
+let squareSize1_width = 140;
+let squareSize2 = squareSize1 - squareSize1 / 3;
+let squareSize3 = squareSize1 - squareSize1 / 1.5;
+
+// checkerboard
+let checkerSize = 50;
+
+// flower
+let numPetals = 9;
+let centerFlowerSize = 45;
+let toggle_flowers = false;
+let flower_col1 = "#e4340c";
+let flower_col2 = "#e4340c";
+
+// palette 1
+let background_col = "#0c0c34";
+
+// ellipse colours
+let ellipse_col1 =  "#0c547c";
+let ellipse_col2 = "#3c8c8c";
+
+// square colours
+let square_col1 = "#e4340c";
+let square_col2 = "#f48c0c";
+let square_col3 = "#ffe7bd";
+
+function setup_wallpaper(pWallpaper) {
+  pWallpaper.output_mode(GRID_WALLPAPER);
+  pWallpaper.resolution(NINE_PORTRAIT);
+  pWallpaper.show_guide(false); //set this to false when you're ready to print
+
+  //Grid settings
+  pWallpaper.grid_settings.cell_width = 200;
+  pWallpaper.grid_settings.cell_height = 200;
+  pWallpaper.grid_settings.row_offset = 0;
+}
+
+
+/////////////////////////////////
+Wallpaper 5:
+
+// your parameter variables go here!
+
+// shapes
+let toggle_ellipse = false;
+let toggle_square = true;
+let toggle_shape = false;
+
+// circles
+let ellipseSize = 85; // 85
+
+// squares
+let squareSize1 = 140;
+let squareSize1_width = 140;
+let squareSize2 = squareSize1 - squareSize1 / 3;
+let squareSize3 = squareSize1 - squareSize1 / 1.5;
+
+// checkerboard
+let checkerSize = 50;
+
+// flower
+let numPetals = 5;
+let centerFlowerSize = 45;
+let toggle_flowers = false;
+let flower_col1 = "#f3e4c3";
+let flower_col2 = "#e0615f";
+
+// palette 1
+let background_col = "#f3e4c3";
+
+// ellipse colours
+let ellipse_col1 = "#9cd5d2";
+let ellipse_col2 = "#4fada8";
+
+// square colours
+let square_col1 = "#f78270";
+let square_col2 = "#e0615f";
+let square_col3 = "#52b9b1";
+
+function setup_wallpaper(pWallpaper) {
+  pWallpaper.output_mode(GRID_WALLPAPER);
+  pWallpaper.resolution(NINE_PORTRAIT);
+  pWallpaper.show_guide(false); //set this to false when you're ready to print
+
+  //Grid settings
+  pWallpaper.grid_settings.cell_width = 200;
+  pWallpaper.grid_settings.cell_height = 200;
+  pWallpaper.grid_settings.row_offset = 0;
+}
+
+/////////////////////////////////
+Wallpaper 6:
+// your parameter variables go here!
+
+// shapes
+let toggle_ellipse = false;
+let toggle_square = true;
+let toggle_shape = false;
+
+// circles
+let ellipseSize = 85; // 85
+
+// squares
+let squareSize1 = 100;
+let squareSize1_width = 100;
+let squareSize2 = squareSize1 - squareSize1 / 3;
+let squareSize3 = squareSize1 - squareSize1 / 1.5;
+
+// checkerboard
+let checkerSize = 50;
+
+// flower
+let numPetals = 9;
+let centerFlowerSize = 100;
+let toggle_flowers = false;
+let flower_col1 = "#f3e4c3";
+let flower_col2 = "#e0615f";
+
+// palette 1
+let background_col = "#f3e4c3";
+
+// ellipse colours
+let ellipse_col1 = "#9cd5d2";
+let ellipse_col2 = "#4fada8";
+
+// square colours
+let square_col1 = "#f78270";
+let square_col2 = "#e0615f";
+let square_col3 = "#52b9b1";
+
+function setup_wallpaper(pWallpaper) {
+  pWallpaper.output_mode(GRID_WALLPAPER);
+  pWallpaper.resolution(NINE_PORTRAIT);
+  pWallpaper.show_guide(false); //set this to false when you're ready to print
+
+  //Grid settings
+  pWallpaper.grid_settings.cell_width = 200;
+  pWallpaper.grid_settings.cell_height = 200;
+  pWallpaper.grid_settings.row_offset = 0;
+}
+
+
+/////////////////////////////////
+Wallpaper 7:
+// your parameter variables go here!
+
+// shapes
+let toggle_ellipse = false;
+let toggle_square = true;
+let toggle_shape = false;
+
+// circles
+let ellipseSize = 85; // 85
+
+// squares
+let squareSize1 = 140;
+let squareSize1_width = 140;
+let squareSize2 = squareSize1 - squareSize1 / 3;
+let squareSize3 = squareSize1 - squareSize1 / 1.5;
+
+// checkerboard
+let checkerSize = 50;
+
+// flower
+let numPetals = 9;
+let centerFlowerSize = 45;
+let toggle_flowers = false;
+let flower_col1 = "#f3e4c3";
+let flower_col2 = "#e0615f";
+
+// palette 1
+let background_col = "#f3e4c3";
+
+// ellipse colours
+let ellipse_col1 = "#9cd5d2";
+let ellipse_col2 = "#4fada8";
+
+// square colours
+let square_col1 = "#f78270";
+let square_col2 = "#e0615f";
+let square_col3 = "#52b9b1";
+
+function setup_wallpaper(pWallpaper) {
+  pWallpaper.output_mode(GRID_WALLPAPER);
+  pWallpaper.resolution(NINE_PORTRAIT);
+  pWallpaper.show_guide(false); //set this to false when you're ready to print
+
+  //Grid settings
+  pWallpaper.grid_settings.cell_width = 200;
+  pWallpaper.grid_settings.cell_height = 200;
+  pWallpaper.grid_settings.row_offset = 50;
+}
+
+/////////////////////////////////
+Wallpaper 8:
+// your parameter variables go here!
+
+// shapes
+let toggle_ellipse = false;
+let toggle_square = true;
+let toggle_shape = false;
+
+// circles
+let ellipseSize = 85; // 85
+
+// squares
+let squareSize1 = 140;
+let squareSize1_width = 140;
+let squareSize2 = squareSize1 - squareSize1 / 3;
+let squareSize3 = squareSize1 - squareSize1 / 1.5;
+
+// checkerboard
+let checkerSize = 50;
+
+// flower
+let numPetals = 9;
+let centerFlowerSize = 45;
+let toggle_flowers = false;
+let flower_col1 = "#f3e4c3";
+let flower_col2 = "#e0615f";
+
+// palette 1
+let background_col = "#f3e4c3";
+
+// ellipse colours
+let ellipse_col1 = "#9cd5d2";
+let ellipse_col2 = "#4fada8";
+
+// square colours
+let square_col1 = "#f78270";
+let square_col2 = "#e0615f";
+let square_col3 = "#52b9b1";
+
+function setup_wallpaper(pWallpaper) {
+  pWallpaper.output_mode(GRID_WALLPAPER);
+  pWallpaper.resolution(NINE_PORTRAIT);
+  pWallpaper.show_guide(false); //set this to false when you're ready to print
+
+  //Grid settings
+  pWallpaper.grid_settings.cell_width = 200;
+  pWallpaper.grid_settings.cell_height = 200;
+  pWallpaper.grid_settings.row_offset = 50;
+}
+
+/////////////////////////////////
+Wallpaper 9: In order for this one to work: in the code under (toggle_square == true) comment out the outer rect() and uncomment the rect() where the x is 0
+// your parameter variables go here!
+
+// shapes
+let toggle_ellipse = false;
+let toggle_square = true;
+let toggle_shape = false;
+
+// circles
+let ellipseSize = 100; // 85
+
+// squares
+let squareSize1 = 140;
+let squareSize1_width = 200;
+let squareSize2 = squareSize1 - squareSize1 / 3;
+let squareSize3 = squareSize1 - squareSize1 / 1.5;
+
+// checkerboard
+let checkerSize = 50;
+
+// flower
+let numPetals = 9;
+let centerFlowerSize = 45;
+let toggle_flowers = false;
+let flower_col1 = "#f3e4c3";
+let flower_col2 = "#e0615f";
+
+// palette 1
+let background_col = "#f3e4c3";
+
+// ellipse colours
+let ellipse_col1 = "#9cd5d2";
+let ellipse_col2 = "#4fada8";
+
+// square colours
+let square_col1 = "#f78270";
+let square_col2 = "#e0615f";
+let square_col3 = "#52b9b1";
+
+function setup_wallpaper(pWallpaper) {
+  pWallpaper.output_mode(GRID_WALLPAPER);
+  pWallpaper.resolution(NINE_PORTRAIT);
+  pWallpaper.show_guide(false); //set this to false when you're ready to print
+
+  //Grid settings
+  pWallpaper.grid_settings.cell_width = 200;
+  pWallpaper.grid_settings.cell_height = 200;
+  pWallpaper.grid_settings.row_offset = 0;
 }
