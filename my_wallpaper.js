@@ -24,7 +24,7 @@ let toggle_flowers = false;
 let flower_col1 = "#f3e4c3";
 let flower_col2 = "#e0615f";
 
-// palette 1
+// colour palette 
 let background_col = "#f3e4c3";
 
 // ellipse colours
@@ -85,12 +85,7 @@ function my_symbol() {
   } else if (toggle_square == true) {
     fill(square_col1); // outer
     // rect(0, 100-squareSize1/2, squareSize1_width, squareSize1);
-    rect(
-      100 - squareSize1 / 2,
-      100 - squareSize1 / 2,
-      squareSize1_width,
-      squareSize1
-    );
+    rect(100 - squareSize1 / 2, 100 - squareSize1 / 2, squareSize1_width, squareSize1);
 
     fill(square_col2); // middle
     rect(100 - squareSize2 / 2, 100 - squareSize2 / 2, squareSize2);
@@ -98,6 +93,7 @@ function my_symbol() {
     fill(square_col3); // center
     rect(100 - squareSize3 / 2, 100 - squareSize3 / 2, squareSize3);
   } else if (toggle_shape == true) {
+    // outer
     fill(square_col1);
     beginShape();
     vertex(35, 60);
@@ -118,6 +114,7 @@ function my_symbol() {
     vertex(25, 100);
     endShape(CLOSE);
 
+    // iddle
     fill(square_col2);
     beginShape();
     vertex(35 + 140 / 8, 60 + 140 / 8);
@@ -138,6 +135,7 @@ function my_symbol() {
     vertex(25 + 140 / 8, 100);
     endShape(CLOSE);
 
+    // center
     fill(square_col3);
     beginShape();
     vertex(35 + 140 / 4, 60 + 140 / 5);
@@ -167,13 +165,16 @@ function my_symbol() {
   rect(0, 200 - 30, 30);
   rect(200 - 30, 200 - 30, 30);
 
+  // center flower
   drawFlower(100, 100, centerFlowerSize, flower_col1);
 
+  // corner flowers
   drawFlower(0, 0, 70, flower_col1);
   drawFlower(200, 0, 70, flower_col1);
   drawFlower(0, 200, 70, flower_col1);
   drawFlower(200, 200, 70, flower_col1);
 
+  // side flowers
   if (toggle_flowers == true) {
     drawFlower(75, 0, 45, flower_col2);
     drawFlower(125, 0, 45, flower_col2);
@@ -194,6 +195,7 @@ function my_symbol() {
   }
 }
 
+// draw flower function
 function drawFlower(x, y, size, colour) {
   push();
   // petals
